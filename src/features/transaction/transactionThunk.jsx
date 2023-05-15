@@ -26,7 +26,6 @@ export const deleteTransactionThunk = async (transactionId, thunkAPI) => {
 };
   
 export const editTransactionThunk = async ({ transactionId, transaction }, thunkAPI) => {
-    console.log(transactionId, transaction)
     try {
       const response = await customFetch.patch(`/transactions/${transactionId}`, transaction);
       thunkAPI.dispatch(clearValues());

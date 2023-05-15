@@ -10,7 +10,6 @@ export const getAllTransactionsThunk = async (_, thunkAPI) => {
     }
     try {
       const response = await customFetch.get(url);
-      // console.log(response.data)
       return response.data;
     } catch (error) {
         return checkForUnauthorizedResponse(error, thunkAPI);    }
