@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api/v1': {
-        target: 'http://localhost:5050',
+        target: 'https://budget-tracker-api.onrender.com',
         changeOrigin: true,
         secure: false,
       }

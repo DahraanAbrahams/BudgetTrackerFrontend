@@ -13,7 +13,6 @@ const TransactionsContainer = () => {
 
   useEffect(() => {
     dispatch(getAllTransactions());
-    console.log(transactions)
   }, [page, search, type, sort]);
 
   if (isLoading) {

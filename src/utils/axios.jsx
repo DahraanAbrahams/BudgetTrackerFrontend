@@ -1,10 +1,10 @@
 import axios from 'axios'
-import { clearStore } from '../features/user/userSlice';
 
 const customFetch = axios.create({
-    baseURL: 'https://budget-tracker-api.onrender.com/api/v1'
+    baseURL: 'http://localhost:5050/api/v1'
 })
 
+import { clearStore } from '../features/user/userSlice';
 
 export const checkForUnauthorizedResponse = (error, thunkAPI) => {
   if (error.response.status === 401) {
