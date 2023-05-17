@@ -6,8 +6,8 @@ import {
   Landing,
   Register,
   ProtectedRoute
-} from "./pages"
-import { AddTransaction, AllTransactions, Profile, SharedLayout } from './pages/dashboard';
+} from "/src/pages"
+import { AddTransaction, AllTransactions, Profile, SharedLayout } from '/src/pages/dashboard';
 
 function App() {
 
